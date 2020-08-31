@@ -13,8 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                   
-                    index
+                        
+                    create
                 </div>
             </div>
         </div>

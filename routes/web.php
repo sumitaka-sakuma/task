@@ -17,7 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('contact/index', 'ContactFormController@index');
+
+Route::group(['prefix' =>'contact', 'middleware' => 'auth'], function(){
+    Route::get('index', 'ContactFormController@index');
+    Route::get('create', 'ContactFormController@create');
+});
 
 Auth::routes();
 
