@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('contact/index', 'ContactFormController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
