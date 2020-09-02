@@ -24,7 +24,7 @@
                     <input type="text" name="title">
                     <br>
                     メールアドレス
-                    <input type="email" name="emial">
+                    <input type="email" name="email">
                     <br>
                     ホームページ
                     <input type="url" name="url">
@@ -45,6 +45,9 @@
                     </select>
                     <br>
                     お問い合わせ内容
+                    <textarea name="contact"></textarea>
+                    <br>
+
                     <input type="checkbox" name="caution" value="1">注意事項に同意する   
                     <br>
 
