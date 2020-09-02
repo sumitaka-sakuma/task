@@ -14,6 +14,9 @@
                         </div>
                     @endif
 
+                    <form method="POST" action="{{ route('contact.update', ['id' => $contact->id ])}}">
+                    @csrf
+
                     氏名
                     <input type="text" name="your_name" value="{{ $contact->your_name }}">
                     <br>
