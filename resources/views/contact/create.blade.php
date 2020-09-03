@@ -27,41 +27,84 @@
                     <form method="POST" action="{{route('contact.store')}}">
                     @csrf
                     
-                    氏名
-                    <input type="text" name="your_name">
+                    <div class="form-group row">
+                      <label for="inputText" class="col-md-3 col-form-label text-md-right">氏名</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control" name="your_name">
+                      </div>
+                    </div>
                     <br>
-                    件名
-                    <input type="text" name="title">
+                    
+                    <div class="form-group row">
+                      <label for="inputText" class="col-md-3 col-form-label text-md-right">件名</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control" name="title">
+                      </div>
+                    </div>
                     <br>
-                    メールアドレス
-                    <input type="email" name="email">
+
+                    <div class="form-group row">
+                      <label for="exampleInputEmail1" class="col-md-3 col-form-label text-md-right">メールアドレス</label>
+                      <div class="col-md-9">
+                        <input type="email" class="form-control" name="email">
+                      </div>
+                    </div>
                     <br>
+
                     ホームページ
                     <input type="url" name="url">
                     <br>
-                    性別
-                    <input type="radio" name="gender" value="0">男性</input>
-                    <input type="radio" name="gender" value="1">女性</input>
+                    
+
+                    <div class="form-group row">
+                      <label for="exampleInputEmail1" class="col-md-3 col-form-label text-md-right">性別</label>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input text-md-center" type="radio" name="gender" value="0">男性</input>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" value="1">女性</input>
+                      </div>
+                    </div>
                     <br>
-                    年齢
-                    <select name="age">
-                    <option value="">選択して下さい</option>
-                    <option value="1">〜19歳</option>
-                    <option value="2">20歳〜29歳</option>
-                    <option value="3">30歳〜39歳</option>
-                    <option value="4">40歳〜49歳</option>
-                    <option value="5">50歳〜59歳</option>
-                    <option value="6">60歳〜</option>
-                    </select>
+
+                    
+                    <div class="form-group row">
+                      <label for="ageSelect" class="col-md-3 text-md-right">年齢</label>
+                      <div class="col-md-9">
+                        <select class="form-control" name="age">
+                          <option value="">選択して下さい</option>
+                          <option value="1">〜19歳</option>
+                          <option value="2">20歳〜29歳</option>
+                          <option value="3">30歳〜39歳</option>
+                          <option value="4">40歳〜49歳</option>
+                          <option value="5">50歳〜59歳</option>
+                          <option value="6">60歳〜</option>
+                        </select>
+                      </div>
+                    </div>
                     <br>
+
                     お問い合わせ内容
                     <textarea name="contact"></textarea>
                     <br>
 
-                    <input type="checkbox" name="caution" value="1">注意事項に同意する   
+                    <div class="form-group row">
+                      <div class="col-md-3 col-form-label text-md-right">注意事項に同意する</div>
+                      <div class="col-md-9">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" name="caution" value="1">
+                        </div>
+                      </div>
+                    </div>   
                     <br>
 
-                    <input class="btn btn-info" type="submit" value="登録する"> 
+                    <div class="form-group row">
+                      <div class="col-md-10">
+                        <input class="btn btn-info" type="submit" value="登録する"> 
+                      </div>
+                    </div>
+                    <br>
+
                     </form>
                     
                 </div>
